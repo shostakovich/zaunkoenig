@@ -2,5 +2,4 @@ copyright: Acme Inc
 title: Zaunkönig
 
 sass:
-  sass_dir:          _scss
-  style:            :compressed
+  style: :compressed
