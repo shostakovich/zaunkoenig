@@ -1,0 +1,191 @@
+$color_primary: #F50202;
+$color_primary_hover: #F50202;
+$color_font: #444444;
+$color_font_dark: #222222;
+$color_font_inverse: #cccccc;
+$color_font_inverse_light: #ffffff;
+$color_background: #ffffff;
+$color_background_inverse: #000000;
+$color_border: #efefef;
+$font_text: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$font_decoration: "Century Gothic", CenturyGothic, Futura, sans-serif;
+
+
+@mixin hyphens(){
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+@mixin body-font(){
+
+  font-size: 1.4rem;
+  @media (min-width: 400px) {
+    font-size: 1.5rem;
+  }
+  /* Larger than phablet (also point when grid becomes active) */
+  @media (min-width: 550px) {
+    font-size: 1.6rem;
+  }
+  /* Larger than tablet */
+  @media (min-width: 750px) {
+    font-size: 1.7rem;
+  }
+}
+
+body {
+  font-family: $font_text;
+  font-size: 1.5em;
+  @include body-font();
+  color: $color_font;
+  font-weight:400;
+  color: $color_font;
+}
+h1, h2, h3 {
+  font-family: $font_decoration;
+  @include hyphens();
+}
+
+.header {
+  color: $color_font_inverse_light;
+  background-color: $color_background_inverse;
+}
+
+#content {
+  margin-bottom: 5em;
+}
+
+.container {
+  max-width: 960px;
+
+    &.start {
+      margin-top: 2em;
+    }
+
+    img, picture {
+      max-width: 100%;
+    }
+  }
+svg.logo-icon {
+  fill:$color_primary;
+}
+
+a {
+  color: $color_primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color_primary_hover;
+    text-decoration: underline;
+  }
+}
+
+hr {
+  clear: both;
+}
+
+img {
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1.1em;
+  letter-spacing: -0.05em;
+  color: $color_font_dark;
+  /* Larger than mobile */
+  @media (min-width: 400px) {
+    font-size: 3em;
+  }
+  /* Larger than phablet (also point when grid becomes active) */
+  @media (min-width: 550px) {
+    font-size: 4em;
+  }
+  /* Larger than tablet */
+  @media (min-width: 750px) {
+    font-size: 5em;
+  }
+}
+
+table, pre {
+  display: block;
+  overflow-x: auto;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+  padding:1.2em 0 0.3em;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+button, .button {
+  text-transform: uppercase;
+  border:2px solid $color_primary;
+  color:$color_primary;
+  font-family: $font_decoration;
+  font-weight:normal;
+  @include body-font();
+  padding: 8px 22px;
+  letter-spacing: 0.02rem;
+  height:auto;
+  border-radius: 50px;
+  white-space: normal;
+}
+button:hover, .button:hover {
+  text-decoration: none;
+  color:#fff;
+  background-color: $color_primary;
+  border-color: $color_primary;
+}
+
+.footer {
+  text-align: center;
+  border-top: 5px solid $color_primary;
+  padding: 1em 0 3em;
+}
+
+.footer-logo {
+  color: $color_font_dark;
+  font-size: 1.5em;
+}
+
+.footer-nav, .footer-logo, .footer-copyright {
+  margin-bottom: 1em;
+}
+
+.footer-nav {
+  a {
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}

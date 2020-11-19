@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <a href="/" title="Zurück zur Homepage">
+        {% include header_logo.html %}
+      </a>
+      <nav class="header-nav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" class="header-navHamburger" id="hamburger" />
+
+        <div class="header-navItems">
+          {% for item in site.data.navigation.main.items %}
+            <a {% if item.url == page.url %} class="active"{% endif %} href="{{ item.url }}">{{ item.title }}</a>
+          {% endfor %}
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

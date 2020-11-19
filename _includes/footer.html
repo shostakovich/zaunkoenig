@@ -1,0 +1,12 @@
+<footer class="footer">
+  {% include footer_logo.html %}
+  <br />
+  {%- if site.copyright -%}
+    <div class="footer-copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.copyright | escape }}</div>
+  {%- endif -%}
+  <nav class="footer-nav">
+    {% for item in site.data.navigation.footer.items %}
+      <a {% if item.url == page.url %} class="active"{% endif %} href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</footer>

@@ -1,0 +1,15 @@
+main:
+  items:
+    - title: Start
+      url: /
+
+    - title: Blog
+      url: /blog/
+
+footer:
+  items:
+    - title: Zaunkönig
+      url: /
+
+    - title: Birdsnest
+      url: /
