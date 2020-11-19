@@ -60,16 +60,13 @@ h1, h2, h3 {
 .container {
   max-width: 960px;
 
-    &.start {
-      margin-top: 2em;
-    }
-
-    img, picture {
-      max-width: 100%;
-    }
+  &.start {
+    margin-top: 2em;
   }
-svg.logo-icon {
-  fill:$color_primary;
+
+  img, picture {
+    max-width: 100%;
+  }
 }
 
 a {
