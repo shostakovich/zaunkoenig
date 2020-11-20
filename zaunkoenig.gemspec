@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "zaunkoenig"
-  spec.version       = "0.0.6"
-  spec.authors       = ["Robert Curth"]
-  spec.email         = ["robert@rocu.de"]
+  spec.version       = "0.0.7"
+  spec.authors       = ["Jens Rusitschka", "Robert Curth"]
+  spec.email         = ["robert.curth@techgenossen.de"]
 
   spec.summary       = "Zaunkönig. A lightweight, opinionated theme for jekyll."
   spec.homepage      = "https://zaunkoenig.techgenossen.de"

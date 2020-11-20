@@ -1,11 +1,69 @@
-# zaunkoenig
+# Zaunkönig
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Zaunkönig is a lightweight and elegant theme for Jekyll.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+![](/assets/zaunkoenig.jpg)
 
-TODO: Delete this and the text above, and describe your gem
+## Features
 
+### Customn Logo
+
+You can overwrite footer and header logo.
+
+Create `includes/footer_logo.html` or `includes/header_logo.html` to roll your own.
+
+### Change fonts an colours
+
+You can change the look and feel of the theme by overriding the variables in `variables.scss`.
+
+You can change fonts and colors.
+
+```scss
+$color_primary: #FF4B3E;
+$color_primary_hover: #972D07;
+$color_font: #222;
+$color_font_dark: #000;
+$color_font_inverse: #cccccc;
+$color_font_inverse_light: #ffffff;
+$color_background: #ffffff;
+$color_background_inverse: #972D07;
+$color_border: #efefef;
+$font_text: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$font_decoration: "Century Gothic", CenturyGothic, Futura, sans-serif;
+```
+
+### Add navigation items
+
+You can customize the navigation items in header and footer by adding your own navigation.yml to `data/navigation.yml`.
+
+```yml
+main:
+  items:
+    - title: Start
+      url: /
+
+    - title: Blog
+      url: /blog/
+
+footer:
+  items:
+    - title: Zaunkönig
+      url: /
+
+    - title: Birdsnest
+      url: /
+```
+
+### Syntax highlighting
+
+You can enable syntax-highlighting by adding the following code to your front-matter.
+
+```yaml
+---
+..
+syntax_highlighting: true
+---
+```
 
 ## Installation
 
@@ -29,13 +87,64 @@ Or install it yourself as:
 
     $ gem install zaunkoenig
 
-## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Zaunkönig is a lightweight and elegant theme for Jekyll.
 
-## Contributing
+![](/assets/zaunkoenig.jpg)
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+## Features
+
+### Customn Logo
+
+You can overwrite footer and header logo.
+
+Create `includes/footer_logo.html` or `includes/header_logo.html` to roll your own.
+
+### Change fonts an colours
+
+You can change the look and feel of the theme by overriding the variables in `variables.scss`.
+
+You can change fonts and colors.
+
+```scss
+$color_primary: #FF4B3E;
+$color_primary_hover: #972D07;
+$color_font: #222;
+$color_font_dark: #000;
+$color_font_inverse: #cccccc;
+$color_font_inverse_light: #ffffff;
+$color_background: #ffffff;
+$color_background_inverse: #972D07;
+$color_border: #efefef;
+$font_text: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$font_decoration: "Century Gothic", CenturyGothic, Futura, sans-serif;
+```
+
+### Add navigation items
+
+You can customize the navigation items in header and footer by adding your own navigation.yml to `data/navigation.yml`.
+
+```yml
+main:
+  items:
+    - title: Start
+      url: /
+
+    - title: Blog
+      url: /blog/
+
+footer:
+  items:
+    - title: Zaunkönig
+      url: /
+
+    - title: Birdsnest
+      url: /
+```
+
+### Syntax highlighting
+
+
 
 ## Development
 
