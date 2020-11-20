@@ -59,10 +59,8 @@ footer:
 You can enable syntax-highlighting by adding the following code to your front-matter.
 
 ```yaml
----
 ..
 syntax_highlighting: true
----
 ```
 
 ## Installation
