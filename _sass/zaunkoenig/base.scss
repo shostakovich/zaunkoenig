@@ -1,16 +1,3 @@
-$color_primary: #F50202;
-$color_primary_hover: #F50202;
-$color_font: #444444;
-$color_font_dark: #222222;
-$color_font_inverse: #cccccc;
-$color_font_inverse_light: #ffffff;
-$color_background: #ffffff;
-$color_background_inverse: #000000;
-$color_border: #efefef;
-$font_text: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-$font_decoration: "Century Gothic", CenturyGothic, Futura, sans-serif;
-
-
 @mixin hyphens(){
   word-wrap: break-word;
   overflow-wrap: break-word;
