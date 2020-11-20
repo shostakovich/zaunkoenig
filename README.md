@@ -4,6 +4,8 @@ Zaunkönig is a lightweight and elegant theme for Jekyll.
 
 ![](/assets/zaunkoenig.jpg)
 
+*Picture taken by [l.schmiegel](https://commons.wikimedia.org/wiki/File:Zaunk%C3%B6nig_IMG_0149.JPG)*
+
 ## Features
 
 ### Customn Logo
